@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    
+    <title>Create Your Charaster</title>
+</head>
+<body class="font-Poppins bg-slate-600">
+
+    <div class="flex justify-evenly items-center mx-auto h-screen max-w-6xl">
+
+        <div id="input-field" class="bg-slate-700 px-14 py-10 rounded-xl shadow-lg">
+
+            <p class="text-center text-xl font-semibold mb-4">Create Your Character</p>
+            
+            <div class="py-1">
+                <label class="block">Name</label>
+                <input id="name-input" class="w-full rounded-lg bg-slate-700 border-2 border-black shadow-lg focus:outline-none px-2 py-1" name="name">
+            </div>
+            <div class="py-1">
+                <label class="block">Gender</label>
+                <select id="character-gender" class="w-full rounded-lg bg-slate-700 border-2 border-black shadow-lg focus:outline-none px-2 py-1 focus:ring-0 focus:border-black">
+                    <option value="" disabled selected hidden>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="py-1">
+                <label class="block">Race</label>
+                <select id="character-race-selecet" class="w-full rounded-lg bg-slate-700 border-2 border-black shadow-lg focus:outline-none px-2 py-1 focus:ring-0 focus:border-black">
+                    <option value="" disabled selected hidden>Select Race</option>
+                    <option value="Elf">Elf</option>
+                    <option value="Human">Human</option>
+                    <option value="Dwarf">Dwarf</option>
+                </select>
+            </div>
+            <div class="py-1">
+                <label class="block">Class</label>
+                <select id="character-class-selecet" class="w-full rounded-lg bg-slate-700 border-2 border-black shadow-lg focus:outline-none px-2 py-1 focus:ring-0 focus:border-black">
+                    <option value="" disabled selected hidden>Select Class</option>
+                    <option value="Mage">Mage</option>
+                    <option value="Warrior">Warrior</option>
+                    <option value="Archer">Archer</option>
+                    <option value="Barbarian">Barbarian</option>
+                    <option value="Druid">Druid</option>
+                </select>
+            </div>
+        </div>
+    
+        <div id="character" class="bg-slate-700 px-20 py-9 rounded-xl shadow-lg">
+            <div id="character-name" class="text-center text-xl font-semibold border-b-2 border-black pb-2">Add Name</div>
+            <div class="flex items-center">
+                <div class="mx-auto h-28 w-28 p-6 mr-10 border-black border-2 rounded-full shadow-xl bg-gray-400"><img id="character-class-img" src=""></div>
+                <div class="w-48 h-40 mb-32 mt-4"><img class="object-scale-down" id="character-img" src="" alt=""></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="out/script.js"></script>
+</body>
+</html>
