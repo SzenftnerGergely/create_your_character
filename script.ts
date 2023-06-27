@@ -10,7 +10,7 @@ const selectCharacterRace = document.getElementById("character-race-selecet") as
 const characterRaceImage = document.getElementById("character-img") as HTMLImageElement
 
 
-inputName.addEventListener("input", function(event) {
+inputName.addEventListener("input", (event) => {
     let target = event.target as HTMLInputElement
     characterName.innerHTML = target.value
 })
